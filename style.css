@@ -39,6 +39,8 @@ header .logo {
 header nav {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;  /* Elemanların taşmasını engelle */
+  justify-content: center;  /* Menü elemanları ortalanacak */
 }
 
 header nav a {
@@ -78,6 +80,7 @@ header .search {
   padding: 0.5rem 1rem;
   border-radius: 30px;
   position: relative;
+  order: 3; /* Search div'i son sıraya al */
 }
 
 header .search input {
@@ -194,7 +197,7 @@ main {
 
 button {
   padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-  background-color: #e74c3c;
+  background-color: transparent;
   border: none;
   border-radius: 30px;
   color: white;
@@ -208,6 +211,7 @@ button {
   justify-content: center;
   gap: 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 button i {
@@ -215,7 +219,7 @@ button i {
 }
 
 button:hover {
-  background-color: #c0392b;
+  background-color: transparent;
   transform: scale(1.05);
 }
 
@@ -271,6 +275,7 @@ button:focus {
   transition: background-color 0.3s ease;
   width: 50%;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .movie-card button:hover {
@@ -301,12 +306,12 @@ section h2 {
 
 .join .reason {
   background-color: rgb(138, 43, 226, 0.2);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-  background: linear-gradient(to right, #333, #777);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, #777777, #dbdbdb);
   border-radius: 20px;
   align-items: center;
   padding: 30px;
-  margin: 8px auto;
+  margin: 12px auto;
 }
 
 .join .reason h3 {
@@ -442,4 +447,50 @@ footer {
 .footer-bottom p {
   margin: 0;
   font-style: italic;
+}
+
+@media (max-width: 854px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    padding: 1rem;
+  }
+
+  header .logo {
+
+    order: 1;
+  }
+
+  header nav {
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: row; 
+    width: 100%;
+    order: 3;
+    justify-content: center; 
+  }
+
+  header .search {
+    display: flex;  
+    gap: 0.8rem;
+    margin-top: 1rem;
+    order:2;
+    justify-content: center;
+  }
+
+  header .search input {
+    width: 90%;
+  }
+
+  header .search .fa-bell,
+  header .search .profile {
+    font-size: 1.5rem;
+  }
+
+  header nav a {
+    font-size: 1rem;
+  }
 }
