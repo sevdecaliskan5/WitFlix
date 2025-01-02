@@ -39,8 +39,8 @@ header .logo {
 header nav {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap;  /* Elemanların taşmasını engelle */
-  justify-content: center;  /* Menü elemanları ortalanacak */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header nav a {
@@ -80,7 +80,7 @@ header .search {
   padding: 0.5rem 1rem;
   border-radius: 30px;
   position: relative;
-  order: 3; /* Search div'i son sıraya al */
+  order: 3;
 }
 
 header .search input {
@@ -232,6 +232,7 @@ button:focus {
   gap: 1.5rem;
   justify-content: center;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .movie-card {
@@ -239,7 +240,7 @@ button:focus {
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 400px;
+  width: 300px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -520,6 +521,41 @@ footer {
 
   button {
     max-width: 100%;
+  }
+  .movie-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem 0;
+  }
+
+  section h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .join .reason {
+    padding: 20px;
+  }
+
+  .join .reason h3 {
+    font-size: 1.1rem;
+  }
+
+  .join .reason span {
+    font-size: 0.9rem;
+  }
+
+  .questions .quesbox {
+    font-size: 0.9rem;
+  }
+
+  .questions .quesbox span {
+    font-size: 1rem;
   }
 }
 
