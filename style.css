@@ -295,12 +295,8 @@ section h2 {
 }
 
 .seperation {
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 1px solid rgb(54, 54, 54);
-}
-
-.join {
-  padding: 35px;
 }
 
 .join .reason {
@@ -324,7 +320,6 @@ section h2 {
 }
 
 .questions {
-  padding: 2rem;
   background-color: #f5f5f5;
 }
 
@@ -367,4 +362,84 @@ section h2 {
 
 .questions .quesbox span:hover {
   color: #e74c3c;
+}
+
+footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 60px 20px;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.footer-helps {
+  max-width: 400px;
+}
+
+.footer-helps nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-helps p span {
+  font-weight: 600;
+}
+
+.footer-helps a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+  padding-right: 10px;
+}
+
+.footer-helps a:hover {
+  color: #e74c3c;
+}
+
+.footer-helps p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.footer-socials .social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.footer-socials .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.apps .apps-icons img {
+  width: 120px;
+  height: 45px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-style: italic;
 }
