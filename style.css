@@ -6,6 +6,7 @@
 
 #wrap {
   max-width: 1000px;
+  height: 100vh;
   margin: 0 auto;
   margin-top: 1rem;
   display: flex;
@@ -131,7 +132,6 @@ main {
   background-image: url("./images/AAAABVkcDtE1_UaJBGFQUfxakjzhYdT1L4kso24uZS0ASl_faURPBSGzY_Mxbx1KEcNbZr3ZqCatG-0zi2k3L4oBXenznQrrROKJQqdu.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 #movie-details {
@@ -221,4 +221,150 @@ button:hover {
 
 button:focus {
   outline: 3px solid #ff0000;
+}
+
+.movie-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.movie-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.movie-card span {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.movie-card button {
+  padding: 0.5rem 0.1rem;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.movie-card button:hover {
+  background-color: #cc0000;
+  transform: scale(1);
+}
+
+.movie-card button i {
+  font-size: 1.2rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.seperation {
+  margin-top: 2rem;
+  border: 1px solid rgb(54, 54, 54);
+}
+
+.join {
+  padding: 35px;
+}
+
+.join .reason {
+  background-color: rgb(138, 43, 226, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, #333, #777);
+  border-radius: 20px;
+  align-items: center;
+  padding: 30px;
+  margin: 8px auto;
+}
+
+.join .reason h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.join .reason span {
+  display: block;
+  font-size: 1rem;
+}
+
+.questions {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.questions .quesbox {
+  background-color: #ffffff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.questions .quesbox a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.questions .quesbox:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.questions .quesbox a:hover {
+  color: #e74c3c;
+}
+
+.questions .quesbox span {
+  color: #555;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.questions .quesbox span:hover {
+  color: #e74c3c;
 }
