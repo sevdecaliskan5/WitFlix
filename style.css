@@ -454,7 +454,6 @@ footer {
   header {
     justify-content: space-between;
     align-items: center;
-
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem;
@@ -576,6 +575,7 @@ footer {
 
   .footer-helps {
     order: 3;
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {
